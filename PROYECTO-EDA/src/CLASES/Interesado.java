@@ -13,7 +13,6 @@ public class Interesado {
     private String nombres;
     private String telefono;
     private String email;
-    private String prueba;
 
     public Interesado(String numId, String nombres, String telefono, String email) {
         this.numId = numId;
