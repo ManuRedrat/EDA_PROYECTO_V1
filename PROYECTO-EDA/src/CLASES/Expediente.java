@@ -1,16 +1,15 @@
 package CLASES;
 
-public class Expediente {
+public class Expediente extends Interesado{
     private String id;
     private int prioridad;
-    private Interesado datos;
     private String asunto;
     private String docu;
 
-    public Expediente(String id, int prioridad, Interesado datos, String asunto, String docu) {
+    public Expediente(String id, int prioridad, String asunto, String docu, String numId, String nombres, String telefono, String email) {
+        super(numId, nombres, telefono, email);
         this.id = id;
         this.prioridad = prioridad;
-        this.datos = datos;
         this.asunto = asunto;
         this.docu = docu;
     }
@@ -29,14 +28,6 @@ public class Expediente {
 
     public void setPrioridad(int prioridad) {
         this.prioridad = prioridad;
-    }
-
-    public Interesado getDatos() {
-        return datos;
-    }
-
-    public void setDatos(Interesado datos) {
-        this.datos = datos;
     }
 
     public String getAsunto() {
