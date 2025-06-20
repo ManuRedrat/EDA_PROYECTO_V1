@@ -7,6 +7,5 @@ public class Inicio {
         frm_Main a = new frm_Main();
         a.setLocationRelativeTo(null);
         a.setVisible(true);
-    }
-    
+    }  
 }
